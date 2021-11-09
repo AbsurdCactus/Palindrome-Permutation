@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  palindromepermutation:
+    image: palindromepermutation
+    build:
+      context: .
+      dockerfile: ./Dockerfile
