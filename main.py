@@ -1,5 +1,15 @@
 
-def palindrome_detector(string_one, string_two):
+def palindrome_detector(given_string):
+
+    given_string = list(given_string)
+
+    odd_counter = 1
+
+    for i in given_string:
+        if 
+
+    print(given_string)
+
     
     return False
 
@@ -7,4 +17,4 @@ def palindrome_detector(string_one, string_two):
 
 
 
-palindrome_detector(string_one="pale", string_two="bale")
+palindrome_detector(given_string="racecar")

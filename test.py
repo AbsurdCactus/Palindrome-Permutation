@@ -4,34 +4,23 @@ import main
 
 class TestMain(unittest.TestCase):
 
-    def test_pale_ple(self):
+    def test_pale(self):
 
         self.assertEqual(main.palindrome_detector(
-            string_one="pale", string_two="ple"), True)
+            given_string="pale"), False)
 
-    def test_pale_palest(self):
-
-        self.assertEqual(main.palindrome_detector(
-            string_one="pale", string_two="palest"), False)
-
-    def test_pale_pa(self):
+    def test_palest(self):
 
         self.assertEqual(main.palindrome_detector(
-            string_one="pale", string_two="pa"), False)
+            given_string="palest"), False)
 
-    def test_pa_pale(self):
-        self.assertEqual(main.palindrome_detector(
-            string_one="pa", string_two="pale"), False)
-
-    def test_pale_bale(self):
-        self.assertEqual(main.palindrome_detector(
-            string_one="pale", string_two="bale"), True)
-
-    def test_pale_bane(self):
+    def test_racecar(self):
 
         self.assertEqual(main.palindrome_detector(
-            string_one="pale", string_two="bane"), False)
+            given_string="racecar"), True)
 
-    #there need to be a lot more tests
+    
+
+    
 
 
