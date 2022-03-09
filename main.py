@@ -1,17 +1,32 @@
 
 def palindrome_detector(given_string):
 
-    given_string = list(given_string)
+    counter = {}
+    odd = 0
 
-    odd_counter = 1
+    for letter in given_string:
 
-    for i in given_string:
-        if 
+        if letter not in counter:
 
-    print(given_string)
+            counter[letter] = 0
+
+        counter[letter] += 1
+
+    for i in counter.values():
+
+        if i % 2 == 1:
+
+            odd += 1
+        
+        if odd > 1:
+
+            return False
+
+    return True
 
     
-    return False
+
+    
 
 
 

@@ -19,6 +19,25 @@ class TestMain(unittest.TestCase):
         self.assertEqual(main.palindrome_detector(
             given_string="racecar"), True)
 
+    def test_clay(self):
+
+        self.assertEqual(main.palindrome_detector(
+            given_string="clay"
+        ), False) 
+
+    def test_Tact_Coa(self):
+
+        self.assertEqual(main.palindrome_detector(
+            given_string="Tact Coa"
+        ), False)
+
+
+    def test_tactcoa(self):
+
+        self.assertEqual(main.palindrome_detector(
+            given_string="tactcoa"
+        ), True)
+
     
 
     
